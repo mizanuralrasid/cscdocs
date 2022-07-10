@@ -19,6 +19,19 @@
 html{
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.about{
+  background: linear-gradient(rgb(245, 210, 210),rgb(250, 250, 204),rgb(197, 245, 197));
+}
+.about h1{
+  font-size: 40px;
+}
+.about h3{
+  font-size: 30px;
+}
+.about p{
+  font-size: 20px;
 }
 
 section{
@@ -67,9 +80,23 @@ header{
 }
 
 header .logo{
-  font-size: 2.5rem;
+  height: 50px;
+  width: 50px;
+  /* font-size: 2.5rem; */
   color:#666;
   font-weight: bolder;
+  overflow: hidden;
+  /* background: red; */
+  border: 1px solid wheat;
+  border-radius: 50%;
+  padding: 10px;
+
+}
+
+/* header logo img  */
+header .logo img{
+  height: 100%;
+  width: 100%;
 }
 
 header .navbar a{
@@ -102,6 +129,14 @@ header .navbar a:hover{
 .home .image{
   padding-top: 4rem;
   flex:1 1 40rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.home .image img{
+  /* padding-top: 4rem;
+  flex:1 1 40rem; */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .home .content{
@@ -149,6 +184,13 @@ header .navbar a:hover{
   padding:2rem 4rem;
   border:.1rem solid rgba(0,0,0,.2);
   flex:1 1 30rem;
+}
+
+
+.service .box-container .view-more-btn{
+  position: relative;
+  width: 100%;
+  height: 50px;
 }
 
 .feature .box-container .box h3{
