@@ -21,6 +21,27 @@ html{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+
+
+
+.mobile-nav{
+  height: 50px;
+  width: 100%;
+  /* background: red; */
+  position: relative;
+  margin-top: 10px;
+ padding: 10px;
+ display: none;
+}
+.mobile-nav ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  margin-left: 250px;
+}
 .about{
   background: linear-gradient(rgb(245, 210, 210),rgb(250, 250, 204),rgb(197, 245, 197));
 }
@@ -588,13 +609,17 @@ header .navbar a:hover{
 
   header .navbar{
     position: absolute;
-    top:100%; left: 0;
+    top:100%; left: 100%;
     width:100%;
     background:#eee;
     height:calc(100vh - 100%);
     border-top: .1rem solid rgba(0,0,0,.2);
     display: none;
   }
+  /* .nav-show{
+    margin-left: 500px;
+    transition: all 0.3s ease-in;
+  } */
 
   header .navbar.nav-toggle{
     display: block;
@@ -609,6 +634,12 @@ header .navbar a:hover{
     border:.1rem solid #444;
     animation: nav-links .5s linear backwards;
     animation-delay: calc(.2s * var(--i));
+  }
+
+
+   /* mobile nav */
+   .mobile-nav{
+    display: block;
   }
 
   @keyframes nav-links{
@@ -642,9 +673,14 @@ header .navbar a:hover{
     font-size: 3.5rem;
   }
 
+
+  /* mobile nav */
+  .mobile-nav{
+    display: block;
+  }
+
   .team .box-container .box{
     width:100%;
   }
 
 }
-
